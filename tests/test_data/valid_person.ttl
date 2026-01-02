@@ -1,0 +1,10 @@
+@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Valid Person with literal properties
+:person1 a :Person ;
+    :title "John Doe" ;
+    :identifier "PER-001" ;
+    :givenName "John" ;
+    :familyName "Doe" .

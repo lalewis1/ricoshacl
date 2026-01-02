@@ -1,0 +1,9 @@
+@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Valid Mechanism with literal properties
+:mechanism1 a :Mechanism ;
+    :title "Digital Preservation System" ;
+    :identifier "MECH-001" ;
+    :description "System for preserving digital archives" .

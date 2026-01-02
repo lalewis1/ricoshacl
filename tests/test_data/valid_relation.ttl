@@ -1,0 +1,9 @@
+@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Valid Relation with literal properties
+:relation1 a :Relation ;
+    :title "Documentation Relation" ;
+    :identifier "REL-001" ;
+    :description "Relation between activity and record" .

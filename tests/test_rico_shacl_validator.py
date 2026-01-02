@@ -144,5 +144,148 @@ class TestThingShape:
         assert "title must be a literal" in results
 
 
+class TestActivityShape:
+    """Test cases for Activity shape validation."""
+
+    def test_valid_activity(self):
+        """Test that a valid Activity passes validation."""
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "valid_activity.ttl", expected_conform=True
+        )
+        assert conforms, f"Valid activity should conform: {results}"
+
+    def test_invalid_activity_wrong_type(self):
+        """Test that Activity with wrong property type fails validation."""
+        # Create test data with wrong type for activity property
+        test_data = """@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Invalid Activity with wrong type for activity property
+:activity1 a :Activity ;
+    :title "Test Activity" ;
+    :activity "invalid_string" .  # Should be a Thing
+"""
+        with open(TEST_DATA_DIR / "invalid_activity_wrong_type.ttl", "w") as f:
+            f.write(test_data)
+        
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "invalid_activity_wrong_type.ttl",
+            expected_conform=False,
+        )
+        assert not conforms, f"Invalid activity should not conform: {results}"
+        assert "must be of type Thing" in results
+
+
+class TestPersonShape:
+    """Test cases for Person shape validation."""
+
+    def test_valid_person(self):
+        """Test that a valid Person passes validation."""
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "valid_person.ttl", expected_conform=True
+        )
+        assert conforms, f"Valid person should conform: {results}"
+
+    def test_invalid_person_wrong_type(self):
+        """Test that Person with wrong property type fails validation."""
+        # Create test data with wrong type for person property
+        test_data = """@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Invalid Person with wrong type for person property
+:person1 a :Person ;
+    :title "John Doe" ;
+    :person "invalid_string" .  # Should be an Agent
+"""
+        with open(TEST_DATA_DIR / "invalid_person_wrong_type.ttl", "w") as f:
+            f.write(test_data)
+        
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "invalid_person_wrong_type.ttl",
+            expected_conform=False,
+        )
+        assert not conforms, f"Invalid person should not conform: {results}"
+        assert "must be of type Agent" in results
+
+
+class TestCorporateBodyShape:
+    """Test cases for CorporateBody shape validation."""
+
+    def test_valid_corporate_body(self):
+        """Test that a valid CorporateBody passes validation."""
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "valid_corporate_body.ttl", expected_conform=True
+        )
+        assert conforms, f"Valid corporate body should conform: {results}"
+
+
+class TestEventShape:
+    """Test cases for Event shape validation."""
+
+    def test_valid_event(self):
+        """Test that a valid Event passes validation."""
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "valid_event.ttl", expected_conform=True
+        )
+        assert conforms, f"Valid event should conform: {results}"
+
+
+class TestPlaceShape:
+    """Test cases for Place shape validation."""
+
+    def test_valid_place(self):
+        """Test that a valid Place passes validation."""
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "valid_place.ttl", expected_conform=True
+        )
+        assert conforms, f"Valid place should conform: {results}"
+
+
+class TestRelationShape:
+    """Test cases for Relation shape validation."""
+
+    def test_valid_relation(self):
+        """Test that a valid Relation passes validation."""
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "valid_relation.ttl", expected_conform=True
+        )
+        assert conforms, f"Valid relation should conform: {results}"
+
+
+class TestIdentifierShape:
+    """Test cases for Identifier shape validation."""
+
+    def test_valid_identifier(self):
+        """Test that a valid Identifier passes validation."""
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "valid_identifier.ttl", expected_conform=True
+        )
+        assert conforms, f"Valid identifier should conform: {results}"
+
+
+class TestFamilyShape:
+    """Test cases for Family shape validation."""
+
+    def test_valid_family(self):
+        """Test that a valid Family passes validation."""
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "valid_family.ttl", expected_conform=True
+        )
+        assert conforms, f"Valid family should conform: {results}"
+
+
+class TestMechanismShape:
+    """Test cases for Mechanism shape validation."""
+
+    def test_valid_mechanism(self):
+        """Test that a valid Mechanism passes validation."""
+        conforms, results = validate_data(
+            TEST_DATA_DIR / "valid_mechanism.ttl", expected_conform=True
+        )
+        assert conforms, f"Valid mechanism should conform: {results}"
+
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
