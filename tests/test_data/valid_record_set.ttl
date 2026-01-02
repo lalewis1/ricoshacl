@@ -1,0 +1,15 @@
+@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Valid RecordSet with proper types
+:recordSet1 a :RecordSet ;
+    :directlyIncludes :record1 ;
+    :hasOrHadAllMembersWithContentType :contentType1 ;
+    :hasOrHadAllMembersWithDocumentaryFormType :docFormType1 ;
+    :accrualsStatus "Closed" ;
+    :accruals "No further accruals expected" .
+
+:record1 a :Record .
+:contentType1 a :ContentType .
+:docFormType1 a :DocumentaryFormType .

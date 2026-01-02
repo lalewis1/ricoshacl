@@ -1,0 +1,10 @@
+@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Valid Instantiation with all literal properties
+:instantiation1 a :Instantiation ;
+    :qualityOfRepresentationNote "High quality digital scan" ;
+    :carrierExtent "10 MB" ;
+    :instantiationExtent "5 pages" ;
+    :productionTechnique "Digital scanning at 600 DPI" .

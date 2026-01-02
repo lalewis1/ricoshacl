@@ -1,0 +1,20 @@
+@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Invalid RecordResource with wrong property types
+:recordResource1 a :RecordResource ;
+    :hasOrHadDigitalInstantiation :wrongType ;  # Should be Instantiation, not a generic resource
+    :classification "Confidential" ;
+    :recordResourceExtent "100 pages" ;
+    :recordResourceStructure "Hierarchical" ;
+    :evidences :relation1 ;
+    :hasOrHadAnalogueInstantiation :instantiation2 ;
+    :scopeAndContent "Collection of administrative records" ;
+    :integrityNote "Complete and unaltered" ;
+    :describesOrDescribed :thing1 .
+
+:wrongType a :Thing .  # Wrong type - should be Instantiation
+:instantiation2 a :Instantiation .
+:relation1 a :Relation .
+:thing1 a :Thing .

@@ -1,0 +1,20 @@
+@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Valid RecordResource with proper types
+:recordResource1 a :RecordResource ;
+    :hasOrHadDigitalInstantiation :instantiation1 ;
+    :classification "Confidential" ;
+    :recordResourceExtent "100 pages" ;
+    :recordResourceStructure "Hierarchical" ;
+    :evidences :relation1 ;
+    :hasOrHadAnalogueInstantiation :instantiation2 ;
+    :scopeAndContent "Collection of administrative records" ;
+    :integrityNote "Complete and unaltered" ;
+    :describesOrDescribed :thing1 .
+
+:instantiation1 a :Instantiation .
+:instantiation2 a :Instantiation .
+:relation1 a :Relation .
+:thing1 a :Thing .

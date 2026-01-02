@@ -1,6 +1,7 @@
 PREFIX : <https://www.ica.org/standards/RiC/ontology#>
 PREFIX ont: <https://kurrawong.ai/validator/rico#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
@@ -42,16 +43,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy ont: ;
     sh:property 
         [
-            sh:class :Instantiation ;
-            sh:message "RecordResource digital instantiation must be of type Instantiation" ;
-            sh:minCount 0 ;
-            sh:path :hasOrHadDigitalInstantiation ;
-        ] ,
-        [
             sh:datatype rdfs:Literal ;
             sh:message "RecordResource classification must be a literal" ;
             sh:minCount 0 ;
             sh:path :classification ;
+        ] ,
+        [
+            sh:class :Relation ;
+            sh:message "RecordResource evidences must be of type Relation" ;
+            sh:minCount 0 ;
+            sh:path :evidences ;
         ] ,
         [
             sh:datatype rdfs:Literal ;
@@ -64,18 +65,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             sh:message "RecordResource structure must be a literal" ;
             sh:minCount 0 ;
             sh:path :recordResourceStructure ;
-        ] ,
-        [
-            sh:class :Relation ;
-            sh:message "RecordResource evidences must be of type Relation" ;
-            sh:minCount 0 ;
-            sh:path :evidences ;
-        ] ,
-        [
-            sh:class :Instantiation ;
-            sh:message "RecordResource analogue instantiation must be of type Instantiation" ;
-            sh:minCount 0 ;
-            sh:path :hasOrHadAnalogueInstantiation ;
         ] ,
         [
             sh:datatype rdfs:Literal ;
@@ -94,6 +83,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             sh:message "RecordResource describes must be of type Thing" ;
             sh:minCount 0 ;
             sh:path :describesOrDescribed ;
+        ] ,
+        [
+            sh:class :Instantiation ;
+            sh:message "RecordResource digital instantiation must be of type Instantiation" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadDigitalInstantiation ;
+        ] ,
+        [
+            sh:class :Instantiation ;
+            sh:message "RecordResource analogue instantiation must be of type Instantiation" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadAnalogueInstantiation ;
         ] ;
     sh:targetClass :RecordResource ;
 .
@@ -103,22 +104,19 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy ont: ;
     sh:property 
         [
-            sh:class :Thing ;
             sh:message "RecordSet directlyIncludes must be either Record or RecordSet" ;
             sh:minCount 0 ;
+            sh:or (
+                
+                [
+                    sh:class :Record ;
+                ]
+                
+                [
+                    sh:class :RecordSet ;
+                ]
+            ) ;
             sh:path :directlyIncludes ;
-        ] ,
-        [
-            sh:class :ContentType ;
-            sh:message "RecordSet content type must be of type ContentType" ;
-            sh:minCount 0 ;
-            sh:path :hasOrHadAllMembersWithContentType ;
-        ] ,
-        [
-            sh:class :DocumentaryFormType ;
-            sh:message "RecordSet documentary form type must be of type DocumentaryFormType" ;
-            sh:minCount 0 ;
-            sh:path :hasOrHadAllMembersWithDocumentaryFormType ;
         ] ,
         [
             sh:datatype rdfs:Literal ;
@@ -131,6 +129,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             sh:message "RecordSet accruals must be a literal" ;
             sh:minCount 0 ;
             sh:path :accruals ;
+        ] ,
+        [
+            sh:class :ContentType ;
+            sh:message "RecordSet content type must be of type ContentType" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadAllMembersWithContentType ;
+        ] ,
+        [
+            sh:class :DocumentaryFormType ;
+            sh:message "RecordSet documentary form type must be of type DocumentaryFormType" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadAllMembersWithDocumentaryFormType ;
         ] ;
     sh:targetClass :RecordSet ;
 .
@@ -146,6 +156,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             sh:path :hasOrHadSubject ;
         ] ,
         [
+            sh:class :Thing ;
+            sh:message "Record main subject must be of type Thing" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadMainSubject ;
+        ] ,
+        [
             sh:class :Agent ;
             sh:message "Record must have creator of type Agent" ;
             sh:minCount 0 ;
@@ -156,12 +172,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             sh:message "Record copy must be of type RecordResource" ;
             sh:minCount 0 ;
             sh:path :hasCopy ;
-        ] ,
-        [
-            sh:class :Thing ;
-            sh:message "Record main subject must be of type Thing" ;
-            sh:minCount 0 ;
-            sh:path :hasOrHadMainSubject ;
         ] ;
     sh:targetClass :Record ;
 .
@@ -172,15 +182,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sh:property 
         [
             sh:datatype rdfs:Literal ;
-            sh:message "Thing title must be a literal" ;
-            sh:minCount 0 ;
-            sh:path :title ;
-        ] ,
-        [
-            sh:datatype rdfs:Literal ;
             sh:message "Thing identifier must be a literal" ;
             sh:minCount 0 ;
             sh:path :identifier ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "Thing title must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :title ;
         ] ;
     sh:targetClass :Thing ;
 .

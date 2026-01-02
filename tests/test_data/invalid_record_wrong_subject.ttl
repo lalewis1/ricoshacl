@@ -1,0 +1,15 @@
+@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Invalid Record with wrong subject type
+:record1 a :Record ;
+    :hasOrHadSubject :wrongType ;  # Should be Thing
+    :hasOrHadCreator :agent1 ;
+    :hasCopy :recordResource1 ;
+    :hasOrHadMainSubject :thing2 .
+
+:wrongType a :Agent .  # Wrong type - should be Thing
+:thing2 a :Thing .
+:agent1 a :Agent .
+:recordResource1 a :RecordResource .

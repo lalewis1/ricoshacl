@@ -1,0 +1,8 @@
+@prefix : <https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Valid Thing with literal properties
+:thing1 a :Thing ;
+    :title "Sample Document" ;
+    :identifier "DOC-001" .
