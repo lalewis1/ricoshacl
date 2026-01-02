@@ -1,0 +1,198 @@
+PREFIX : <https://www.ica.org/standards/RiC/ontology#>
+PREFIX ont: <https://kurrawong.ai/validator/rico#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:InstantiationShape
+    a sh:NodeShape ;
+    rdfs:isDefinedBy ont: ;
+    sh:property 
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "Instantiation qualityOfRepresentationNote must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :qualityOfRepresentationNote ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "Instantiation carrierExtent must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :carrierExtent ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "Instantiation instantiationExtent must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :instantiationExtent ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "Instantiation productionTechnique must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :productionTechnique ;
+        ] ;
+    sh:targetClass :Instantiation ;
+.
+
+:RecordResourceShape
+    a sh:NodeShape ;
+    rdfs:isDefinedBy ont: ;
+    sh:property 
+        [
+            sh:class :Instantiation ;
+            sh:message "RecordResource digital instantiation must be of type Instantiation" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadDigitalInstantiation ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "RecordResource classification must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :classification ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "RecordResource extent must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :recordResourceExtent ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "RecordResource structure must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :recordResourceStructure ;
+        ] ,
+        [
+            sh:class :Relation ;
+            sh:message "RecordResource evidences must be of type Relation" ;
+            sh:minCount 0 ;
+            sh:path :evidences ;
+        ] ,
+        [
+            sh:class :Instantiation ;
+            sh:message "RecordResource analogue instantiation must be of type Instantiation" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadAnalogueInstantiation ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "RecordResource scopeAndContent must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :scopeAndContent ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "RecordResource integrityNote must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :integrityNote ;
+        ] ,
+        [
+            sh:class :Thing ;
+            sh:message "RecordResource describes must be of type Thing" ;
+            sh:minCount 0 ;
+            sh:path :describesOrDescribed ;
+        ] ;
+    sh:targetClass :RecordResource ;
+.
+
+:RecordSetShape
+    a sh:NodeShape ;
+    rdfs:isDefinedBy ont: ;
+    sh:property 
+        [
+            sh:class :Thing ;
+            sh:message "RecordSet directlyIncludes must be either Record or RecordSet" ;
+            sh:minCount 0 ;
+            sh:path :directlyIncludes ;
+        ] ,
+        [
+            sh:class :ContentType ;
+            sh:message "RecordSet content type must be of type ContentType" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadAllMembersWithContentType ;
+        ] ,
+        [
+            sh:class :DocumentaryFormType ;
+            sh:message "RecordSet documentary form type must be of type DocumentaryFormType" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadAllMembersWithDocumentaryFormType ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "RecordSet accrualsStatus must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :accrualsStatus ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "RecordSet accruals must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :accruals ;
+        ] ;
+    sh:targetClass :RecordSet ;
+.
+
+:RecordShape
+    a sh:NodeShape ;
+    rdfs:isDefinedBy ont: ;
+    sh:property 
+        [
+            sh:class :Thing ;
+            sh:message "Record subject must be of type Thing" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadSubject ;
+        ] ,
+        [
+            sh:class :Agent ;
+            sh:message "Record must have creator of type Agent" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadCreator ;
+        ] ,
+        [
+            sh:class :RecordResource ;
+            sh:message "Record copy must be of type RecordResource" ;
+            sh:minCount 0 ;
+            sh:path :hasCopy ;
+        ] ,
+        [
+            sh:class :Thing ;
+            sh:message "Record main subject must be of type Thing" ;
+            sh:minCount 0 ;
+            sh:path :hasOrHadMainSubject ;
+        ] ;
+    sh:targetClass :Record ;
+.
+
+:ThingShape
+    a sh:NodeShape ;
+    rdfs:isDefinedBy ont: ;
+    sh:property 
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "Thing title must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :title ;
+        ] ,
+        [
+            sh:datatype rdfs:Literal ;
+            sh:message "Thing identifier must be a literal" ;
+            sh:minCount 0 ;
+            sh:path :identifier ;
+        ] ;
+    sh:targetClass :Thing ;
+.
+
+ont:
+    a owl:Ontology ;
+    owl:versionIRI :0.0.1 ;
+    owl:versionInfo "0.0.1: First release, partial implementation only." ;
+    schema:creator "https://kurrawong.ai/people#lawson-lewis" ;
+    schema:dateCreated "2026-01-02"^^xsd:date ;
+    schema:dateModified "2026-01-02"^^xsd:date ;
+    schema:definition "Unofficial SHACL Shapes Validator for the Records in Contect Ontology [RiC-O]"@en ;
+    schema:name "RiC-O Validator" ;
+    schema:publisher <https://kurrawong.ai> ;
+.
