@@ -1,0 +1,838 @@
+ontology/rico.ttl:124::CarrierExtent
+ontology/rico.ttl:125:    a owl:Class ;
+ontology/rico.ttl:166::InstantiationExtent
+ontology/rico.ttl:167:    a owl:Class ;
+ontology/rico.ttl:204::RecordResourceExtent
+ontology/rico.ttl:205:    a owl:Class ;
+ontology/rico.ttl:2461::activityIsContextOfRelation
+ontology/rico.ttl:2462:    a owl:ObjectProperty ;
+ontology/rico.ttl:2493::affectsOrAffected
+ontology/rico.ttl:2494:    a owl:ObjectProperty ;
+ontology/rico.ttl:2525::agentHasOrHadLocation
+ontology/rico.ttl:2526:    a owl:ObjectProperty ;
+ontology/rico.ttl:2555::authorizedBy
+ontology/rico.ttl:2556:    a owl:ObjectProperty ;
+ontology/rico.ttl:2591::authorizes
+ontology/rico.ttl:2592:    a owl:ObjectProperty ;
+ontology/rico.ttl:2632::authorizingAgent
+ontology/rico.ttl:2633:    a owl:ObjectProperty ;
+ontology/rico.ttl:2660::contained
+ontology/rico.ttl:2661:    a owl:ObjectProperty ;
+ontology/rico.ttl:2692::creationWithRole
+ontology/rico.ttl:2693:    a owl:ObjectProperty ;
+ontology/rico.ttl:2716::describesOrDescribed
+ontology/rico.ttl:2717:    a owl:ObjectProperty ;
+ontology/rico.ttl:2756::directlyContains
+ontology/rico.ttl:2757:    a owl:ObjectProperty ;
+ontology/rico.ttl:2787::directlyFollowsInSequence
+ontology/rico.ttl:2788:    a owl:ObjectProperty ;
+ontology/rico.ttl:2821::directlyIncludes
+ontology/rico.ttl:2822:    a owl:ObjectProperty ;
+ontology/rico.ttl:2861::directlyPrecedesInSequence
+ontology/rico.ttl:2862:    a owl:ObjectProperty ;
+ontology/rico.ttl:2897::documentedBy
+ontology/rico.ttl:2898:    a owl:ObjectProperty ;
+ontology/rico.ttl:2952::documents
+ontology/rico.ttl:2953:    a owl:ObjectProperty ;
+ontology/rico.ttl:3016::evidences
+ontology/rico.ttl:3017:    a owl:ObjectProperty ;
+ontology/rico.ttl:3050::existsOrExistedIn
+ontology/rico.ttl:3051:    a owl:ObjectProperty ;
+ontology/rico.ttl:3097::expressesOrExpressed
+ontology/rico.ttl:3098:    a owl:ObjectProperty ;
+ontology/rico.ttl:3129::followedInSequence
+ontology/rico.ttl:3130:    a owl:ObjectProperty ;
+ontology/rico.ttl:3218::hadComponent
+ontology/rico.ttl:3219:    a owl:ObjectProperty ;
+ontology/rico.ttl:3251::hadConstituent
+ontology/rico.ttl:3252:    a owl:ObjectProperty ;
+ontology/rico.ttl:3302::hadSubdivision
+ontology/rico.ttl:3303:    a owl:ObjectProperty ;
+ontology/rico.ttl:3334::hadSubevent
+ontology/rico.ttl:3335:    a owl:ObjectProperty ;
+ontology/rico.ttl:3367::hasActivityType
+ontology/rico.ttl:3368:    a owl:ObjectProperty ;
+ontology/rico.ttl:3395::hasAddressee
+ontology/rico.ttl:3396:    a owl:ObjectProperty ;
+ontology/rico.ttl:3434::hasAuthor
+ontology/rico.ttl:3435:    a owl:ObjectProperty ;
+ontology/rico.ttl:3494::hasBirthDate
+ontology/rico.ttl:3495:    a owl:ObjectProperty ;
+ontology/rico.ttl:3519::hasBirthPlace
+ontology/rico.ttl:3520:    a owl:ObjectProperty ;
+ontology/rico.ttl:3550::hasCarrierType
+ontology/rico.ttl:3551:    a owl:ObjectProperty ;
+ontology/rico.ttl:3578::hasChild
+ontology/rico.ttl:3579:    a owl:ObjectProperty ;
+ontology/rico.ttl:3618::hasCollector
+ontology/rico.ttl:3619:    a owl:ObjectProperty ;
+ontology/rico.ttl:3662::hasContentOfType
+ontology/rico.ttl:3663:    a owl:ObjectProperty ;
+ontology/rico.ttl:3697::hasCopy
+ontology/rico.ttl:3698:    a owl:ObjectProperty ;
+ontology/rico.ttl:3732::hasCreationDate
+ontology/rico.ttl:3733:    a owl:ObjectProperty ;
+ontology/rico.ttl:3764::hasDateType
+ontology/rico.ttl:3765:    a owl:ObjectProperty ;
+ontology/rico.ttl:3791::hasDeathDate
+ontology/rico.ttl:3792:    a owl:ObjectProperty ;
+ontology/rico.ttl:3816::hasDeathPlace
+ontology/rico.ttl:3817:    a owl:ObjectProperty ;
+ontology/rico.ttl:3847::hasDestructionDate
+ontology/rico.ttl:3848:    a owl:ObjectProperty ;
+ontology/rico.ttl:3879::hasDirectComponent
+ontology/rico.ttl:3880:    a owl:ObjectProperty ;
+ontology/rico.ttl:3912::hasDirectConstituent
+ontology/rico.ttl:3913:    a owl:ObjectProperty ;
+ontology/rico.ttl:3963::hasDirectSubdivision
+ontology/rico.ttl:3964:    a owl:ObjectProperty ;
+ontology/rico.ttl:3996::hasDirectSubevent
+ontology/rico.ttl:3997:    a owl:ObjectProperty ;
+ontology/rico.ttl:4029::hasDocumentaryFormType
+ontology/rico.ttl:4030:    a owl:ObjectProperty ;
+ontology/rico.ttl:4068::hasDraft
+ontology/rico.ttl:4069:    a owl:ObjectProperty ;
+ontology/rico.ttl:4109::hasEventType
+ontology/rico.ttl:4110:    a owl:ObjectProperty ;
+ontology/rico.ttl:4137::hasExtent
+ontology/rico.ttl:4138:    a owl:ObjectProperty ;
+ontology/rico.ttl:4172::hasExtentType
+ontology/rico.ttl:4173:    a owl:ObjectProperty ;
+ontology/rico.ttl:4202::hasFamilyType
+ontology/rico.ttl:4203:    a owl:ObjectProperty ;
+ontology/rico.ttl:4230::hasIdentifierType
+ontology/rico.ttl:4231:    a owl:ObjectProperty ;
+ontology/rico.ttl:4263::hasOrHadAgentName
+ontology/rico.ttl:4264:    a owl:ObjectProperty ;
+ontology/rico.ttl:4292::hasOrHadAllMembersWithContentType
+ontology/rico.ttl:4293:    a owl:ObjectProperty ;
+ontology/rico.ttl:4325::hasOrHadAllMembersWithCreationDate
+ontology/rico.ttl:4326:    a owl:ObjectProperty ;
+ontology/rico.ttl:4362::hasOrHadAllMembersWithDocumentaryFormType
+ontology/rico.ttl:4363:    a owl:ObjectProperty ;
+ontology/rico.ttl:4393::hasOrHadAllMembersWithLanguage
+ontology/rico.ttl:4394:    a owl:ObjectProperty ;
+ontology/rico.ttl:4424::hasOrHadAllMembersWithLegalStatus
+ontology/rico.ttl:4425:    a owl:ObjectProperty ;
+ontology/rico.ttl:4456::hasOrHadAllMembersWithRecordState
+ontology/rico.ttl:4457:    a owl:ObjectProperty ;
+ontology/rico.ttl:4488::hasOrHadAnalogueInstantiation
+ontology/rico.ttl:4489:    a owl:ObjectProperty ;
+ontology/rico.ttl:4515::hasOrHadCoordinates
+ontology/rico.ttl:4516:    a owl:ObjectProperty ;
+ontology/rico.ttl:4548::hasOrHadCorporateBodyType
+ontology/rico.ttl:4549:    a owl:ObjectProperty ;
+ontology/rico.ttl:4578::hasOrHadDigitalInstantiation
+ontology/rico.ttl:4579:    a owl:ObjectProperty ;
+ontology/rico.ttl:4607::hasOrHadEmployer
+ontology/rico.ttl:4608:    a owl:ObjectProperty ;
+ontology/rico.ttl:4646::hasOrHadHolder
+ontology/rico.ttl:4647:    a owl:ObjectProperty ;
+ontology/rico.ttl:4695::hasOrHadIdentifier
+ontology/rico.ttl:4696:    a owl:ObjectProperty ;
+ontology/rico.ttl:4725::hasOrHadIntellectualPropertyRightsHolder
+ontology/rico.ttl:4726:    a owl:ObjectProperty ;
+ontology/rico.ttl:4785::hasOrHadJurisdiction
+ontology/rico.ttl:4786:    a owl:ObjectProperty ;
+ontology/rico.ttl:4822::hasOrHadLanguage
+ontology/rico.ttl:4823:    a owl:ObjectProperty ;
+ontology/rico.ttl:4864::hasOrHadLeader
+ontology/rico.ttl:4865:    a owl:ObjectProperty ;
+ontology/rico.ttl:4906::hasOrHadLegalStatus
+ontology/rico.ttl:4907:    a owl:ObjectProperty ;
+ontology/rico.ttl:4943::hasOrHadMainSubject
+ontology/rico.ttl:4944:    a owl:ObjectProperty ;
+ontology/rico.ttl:4978::hasOrHadMandateType
+ontology/rico.ttl:4979:    a owl:ObjectProperty ;
+ontology/rico.ttl:5000::hasOrHadMember
+ontology/rico.ttl:5001:    a owl:ObjectProperty ;
+ontology/rico.ttl:5043::hasOrHadMostMembersWithCreationDate
+ontology/rico.ttl:5044:    a owl:ObjectProperty ;
+ontology/rico.ttl:5085::hasOrHadOccupationOfType
+ontology/rico.ttl:5086:    a owl:ObjectProperty ;
+ontology/rico.ttl:5115::hasOrHadOwner
+ontology/rico.ttl:5116:    a owl:ObjectProperty ;
+ontology/rico.ttl:5165::hasOrHadPhysicalLocation
+ontology/rico.ttl:5166:    a owl:ObjectProperty ;
+ontology/rico.ttl:5200::hasOrHadPlaceName
+ontology/rico.ttl:5201:    a owl:ObjectProperty ;
+ontology/rico.ttl:5230::hasOrHadPlaceType
+ontology/rico.ttl:5231:    a owl:ObjectProperty ;
+ontology/rico.ttl:5260::hasOrHadPosition
+ontology/rico.ttl:5261:    a owl:ObjectProperty ;
+ontology/rico.ttl:5307::hasOrHadSomeMembersWithContentType
+ontology/rico.ttl:5308:    a owl:ObjectProperty ;
+ontology/rico.ttl:5340::hasOrHadSomeMembersWithDocumentaryFormType
+ontology/rico.ttl:5341:    a owl:ObjectProperty ;
+ontology/rico.ttl:5378::hasOrHadSomeMembersWithLanguage
+ontology/rico.ttl:5379:    a owl:ObjectProperty ;
+ontology/rico.ttl:5409::hasOrHadSomeMembersWithLegalStatus
+ontology/rico.ttl:5410:    a owl:ObjectProperty ;
+ontology/rico.ttl:5441::hasOrHadSomeMembersWithRecordState
+ontology/rico.ttl:5442:    a owl:ObjectProperty ;
+ontology/rico.ttl:5473::hasOrHadStudent
+ontology/rico.ttl:5474:    a owl:ObjectProperty ;
+ontology/rico.ttl:5515::hasOrHadTeacher
+ontology/rico.ttl:5516:    a owl:ObjectProperty ;
+ontology/rico.ttl:5563::hasOrHadTitle
+ontology/rico.ttl:5564:    a owl:ObjectProperty ;
+ontology/rico.ttl:5601::hasOriginal
+ontology/rico.ttl:5602:    a owl:ObjectProperty ;
+ontology/rico.ttl:5642::hasProductionTechniqueType
+ontology/rico.ttl:5643:    a owl:ObjectProperty ;
+ontology/rico.ttl:5670::hasPublicationDate
+ontology/rico.ttl:5671:    a owl:ObjectProperty ;
+ontology/rico.ttl:5697::hasPublisher
+ontology/rico.ttl:5698:    a owl:ObjectProperty ;
+ontology/rico.ttl:5726::hasReceiver
+ontology/rico.ttl:5727:    a owl:ObjectProperty ;
+ontology/rico.ttl:5774::hasRecordSetType
+ontology/rico.ttl:5775:    a owl:ObjectProperty ;
+ontology/rico.ttl:5802::hasRecordState
+ontology/rico.ttl:5803:    a owl:ObjectProperty ;
+ontology/rico.ttl:5839::hasReply
+ontology/rico.ttl:5840:    a owl:ObjectProperty ;
+ontology/rico.ttl:5873::hasRepresentationType
+ontology/rico.ttl:5874:    a owl:ObjectProperty ;
+ontology/rico.ttl:5901::hasSender
+ontology/rico.ttl:5902:    a owl:ObjectProperty ;
+ontology/rico.ttl:5941::hasUnitOfMeasurement
+ontology/rico.ttl:5942:    a owl:ObjectProperty ;
+ontology/rico.ttl:5970::hasWithin
+ontology/rico.ttl:5971:    a owl:ObjectProperty ;
+ontology/rico.ttl:6003::included
+ontology/rico.ttl:6004:    a owl:ObjectProperty ;
+ontology/rico.ttl:6043::isActivityTypeOf
+ontology/rico.ttl:6044:    a owl:ObjectProperty ;
+ontology/rico.ttl:6071::isAddresseeOf
+ontology/rico.ttl:6072:    a owl:ObjectProperty ;
+ontology/rico.ttl:6103::isAuthorOf
+ontology/rico.ttl:6104:    a owl:ObjectProperty ;
+ontology/rico.ttl:6152::isAuthorizingAgentInMandateRelation
+ontology/rico.ttl:6153:    a owl:ObjectProperty ;
+ontology/rico.ttl:6178::isBirthDateOf
+ontology/rico.ttl:6179:    a owl:ObjectProperty ;
+ontology/rico.ttl:6204::isBirthPlaceOf
+ontology/rico.ttl:6205:    a owl:ObjectProperty ;
+ontology/rico.ttl:6236::isCarrierTypeOf
+ontology/rico.ttl:6237:    a owl:ObjectProperty ;
+ontology/rico.ttl:6264::isChildOf
+ontology/rico.ttl:6265:    a owl:ObjectProperty ;
+ontology/rico.ttl:6311::isCollectorOf
+ontology/rico.ttl:6312:    a owl:ObjectProperty ;
+ontology/rico.ttl:6349::isContentTypeOf
+ontology/rico.ttl:6350:    a owl:ObjectProperty ;
+ontology/rico.ttl:6384::isCopyOf
+ontology/rico.ttl:6385:    a owl:ObjectProperty ;
+ontology/rico.ttl:6411::isCreationDateOf
+ontology/rico.ttl:6412:    a owl:ObjectProperty ;
+ontology/rico.ttl:6458::isDateOfOccurrenceOf
+ontology/rico.ttl:6459:    a owl:ObjectProperty ;
+ontology/rico.ttl:6497::isDateTypeOf
+ontology/rico.ttl:6498:    a owl:ObjectProperty ;
+ontology/rico.ttl:6524::isDeathDateOf
+ontology/rico.ttl:6525:    a owl:ObjectProperty ;
+ontology/rico.ttl:6549::isDeathPlaceOf
+ontology/rico.ttl:6550:    a owl:ObjectProperty ;
+ontology/rico.ttl:6582::isDestructionDateOf
+ontology/rico.ttl:6583:    a owl:ObjectProperty ;
+ontology/rico.ttl:6614::isDirectComponentOf
+ontology/rico.ttl:6615:    a owl:ObjectProperty ;
+ontology/rico.ttl:6647::isDirectConstituentOf
+ontology/rico.ttl:6648:    a owl:ObjectProperty ;
+ontology/rico.ttl:6698::isDirectSubdivisionOf
+ontology/rico.ttl:6699:    a owl:ObjectProperty ;
+ontology/rico.ttl:6732::isDirectSubeventOf
+ontology/rico.ttl:6733:    a owl:ObjectProperty ;
+ontology/rico.ttl:6765::isDirectlyContainedBy
+ontology/rico.ttl:6766:    a owl:ObjectProperty ;
+ontology/rico.ttl:6798::isDirectlyIncludedIn
+ontology/rico.ttl:6799:    a owl:ObjectProperty ;
+ontology/rico.ttl:6838::isDocumentaryFormTypeOf
+ontology/rico.ttl:6839:    a owl:ObjectProperty ;
+ontology/rico.ttl:6873::isDraftOf
+ontology/rico.ttl:6874:    a owl:ObjectProperty ;
+ontology/rico.ttl:6945::isEventTypeOf
+ontology/rico.ttl:6946:    a owl:ObjectProperty ;
+ontology/rico.ttl:6977::isEvidencedBy
+ontology/rico.ttl:6978:    a owl:ObjectProperty ;
+ontology/rico.ttl:7011::isExtentOf
+ontology/rico.ttl:7012:    a owl:ObjectProperty ;
+ontology/rico.ttl:7049::isExtentTypeOf
+ontology/rico.ttl:7050:    a owl:ObjectProperty ;
+ontology/rico.ttl:7082::isFamilyTypeOf
+ontology/rico.ttl:7083:    a owl:ObjectProperty ;
+ontology/rico.ttl:7114::isFromUseDateOf
+ontology/rico.ttl:7115:    a owl:ObjectProperty ;
+ontology/rico.ttl:7142::isIdentifierTypeOf
+ontology/rico.ttl:7143:    a owl:ObjectProperty ;
+ontology/rico.ttl:7175::isLastUpdateDateOf
+ontology/rico.ttl:7176:    a owl:ObjectProperty ;
+ontology/rico.ttl:7199::isOrWasAffectedBy
+ontology/rico.ttl:7200:    a owl:ObjectProperty ;
+ontology/rico.ttl:7230::isOrWasAgentNameOf
+ontology/rico.ttl:7231:    a owl:ObjectProperty ;
+ontology/rico.ttl:7259::isOrWasAnalogueInstantiationOf
+ontology/rico.ttl:7260:    a owl:ObjectProperty ;
+ontology/rico.ttl:7287::isOrWasContentTypeOfAllMembersOf
+ontology/rico.ttl:7288:    a owl:ObjectProperty ;
+ontology/rico.ttl:7318::isOrWasContentTypeOfSomeMembersOf
+ontology/rico.ttl:7319:    a owl:ObjectProperty ;
+ontology/rico.ttl:7349::isOrWasCoordinatesOf
+ontology/rico.ttl:7350:    a owl:ObjectProperty ;
+ontology/rico.ttl:7378::isOrWasCorporateBodyTypeOf
+ontology/rico.ttl:7379:    a owl:ObjectProperty ;
+ontology/rico.ttl:7407::isOrWasCreationDateOfAllMembersOf
+ontology/rico.ttl:7408:    a owl:ObjectProperty ;
+ontology/rico.ttl:7442::isOrWasCreationDateOfMostMembersOf
+ontology/rico.ttl:7443:    a owl:ObjectProperty ;
+ontology/rico.ttl:7486::isOrWasDescribedBy
+ontology/rico.ttl:7487:    a owl:ObjectProperty ;
+ontology/rico.ttl:7522::isOrWasDigitalInstantiationOf
+ontology/rico.ttl:7523:    a owl:ObjectProperty ;
+ontology/rico.ttl:7546::isOrWasDocumentaryFormTypeOfAllMembersOf
+ontology/rico.ttl:7547:    a owl:ObjectProperty ;
+ontology/rico.ttl:7577::isOrWasDocumentaryFormTypeOfSomeMembersOf
+ontology/rico.ttl:7578:    a owl:ObjectProperty ;
+ontology/rico.ttl:7608::isOrWasEmployerOf
+ontology/rico.ttl:7609:    a owl:ObjectProperty ;
+ontology/rico.ttl:7644::isOrWasEnforcedBy
+ontology/rico.ttl:7645:    a owl:ObjectProperty ;
+ontology/rico.ttl:7676::isOrWasExpressedBy
+ontology/rico.ttl:7677:    a owl:ObjectProperty ;
+ontology/rico.ttl:7708::isOrWasHolderOf
+ontology/rico.ttl:7709:    a owl:ObjectProperty ;
+ontology/rico.ttl:7758::isOrWasHolderOfIntellectualPropertyRightsOf
+ontology/rico.ttl:7759:    a owl:ObjectProperty ;
+ontology/rico.ttl:7818::isOrWasIdentifierOf
+ontology/rico.ttl:7819:    a owl:ObjectProperty ;
+ontology/rico.ttl:7848::isOrWasJurisdictionOf
+ontology/rico.ttl:7849:    a owl:ObjectProperty ;
+ontology/rico.ttl:7891::isOrWasLanguageOf
+ontology/rico.ttl:7892:    a owl:ObjectProperty ;
+ontology/rico.ttl:7928::isOrWasLanguageOfAllMembersOf
+ontology/rico.ttl:7929:    a owl:ObjectProperty ;
+ontology/rico.ttl:7959::isOrWasLanguageOfSomeMembersOf
+ontology/rico.ttl:7960:    a owl:ObjectProperty ;
+ontology/rico.ttl:7990::isOrWasLeaderOf
+ontology/rico.ttl:7991:    a owl:ObjectProperty ;
+ontology/rico.ttl:8033::isOrWasLegalStatusOf
+ontology/rico.ttl:8034:    a owl:ObjectProperty ;
+ontology/rico.ttl:8073::isOrWasLegalStatusOfAllMembersOf
+ontology/rico.ttl:8074:    a owl:ObjectProperty ;
+ontology/rico.ttl:8104::isOrWasLegalStatusOfSomeMembersOf
+ontology/rico.ttl:8105:    a owl:ObjectProperty ;
+ontology/rico.ttl:8135::isOrWasLocationOfAgent
+ontology/rico.ttl:8136:    a owl:ObjectProperty ;
+ontology/rico.ttl:8165::isOrWasMainSubjectOf
+ontology/rico.ttl:8166:    a owl:ObjectProperty ;
+ontology/rico.ttl:8197::isOrWasMandateTypeOf
+ontology/rico.ttl:8198:    a owl:ObjectProperty ;
+ontology/rico.ttl:8223::isOrWasMemberOf
+ontology/rico.ttl:8224:    a owl:ObjectProperty ;
+ontology/rico.ttl:8265::isOrWasOccupationTypeOf
+ontology/rico.ttl:8266:    a owl:ObjectProperty ;
+ontology/rico.ttl:8295::isOrWasOccupiedBy
+ontology/rico.ttl:8296:    a owl:ObjectProperty ;
+ontology/rico.ttl:8337::isOrWasOwnerOf
+ontology/rico.ttl:8338:    a owl:ObjectProperty ;
+ontology/rico.ttl:8388::isOrWasPerformedBy
+ontology/rico.ttl:8389:    a owl:ObjectProperty ;
+ontology/rico.ttl:8431::isOrWasPhysicalLocationOf
+ontology/rico.ttl:8432:    a owl:ObjectProperty ;
+ontology/rico.ttl:8466::isOrWasPlaceNameOf
+ontology/rico.ttl:8467:    a owl:ObjectProperty ;
+ontology/rico.ttl:8496::isOrWasPlaceTypeOf
+ontology/rico.ttl:8497:    a owl:ObjectProperty ;
+ontology/rico.ttl:8526::isOrWasRecordStateOfAllMembersOf
+ontology/rico.ttl:8527:    a owl:ObjectProperty ;
+ontology/rico.ttl:8557::isOrWasRecordStateOfSomeMembersOf
+ontology/rico.ttl:8558:    a owl:ObjectProperty ;
+ontology/rico.ttl:8588::isOrWasRegulatedBy
+ontology/rico.ttl:8589:    a owl:ObjectProperty ;
+ontology/rico.ttl:8620::isOrWasResponsibleForEnforcing
+ontology/rico.ttl:8621:    a owl:ObjectProperty ;
+ontology/rico.ttl:8652::isOrWasTitleOf
+ontology/rico.ttl:8653:    a owl:ObjectProperty ;
+ontology/rico.ttl:8690::isOriginalOf
+ontology/rico.ttl:8691:    a owl:ObjectProperty ;
+ontology/rico.ttl:8734::isProductionTechniqueTypeOf
+ontology/rico.ttl:8735:    a owl:ObjectProperty ;
+ontology/rico.ttl:8762::isPublicationDateOf
+ontology/rico.ttl:8763:    a owl:ObjectProperty ;
+ontology/rico.ttl:8790::isPublisherOf
+ontology/rico.ttl:8791:    a owl:ObjectProperty ;
+ontology/rico.ttl:8819::isReceiverOf
+ontology/rico.ttl:8820:    a owl:ObjectProperty ;
+ontology/rico.ttl:8857::isRecordSetTypeOf
+ontology/rico.ttl:8858:    a owl:ObjectProperty ;
+ontology/rico.ttl:8885::isRecordStateOf
+ontology/rico.ttl:8886:    a owl:ObjectProperty ;
+ontology/rico.ttl:8921::isReplyTo
+ontology/rico.ttl:8922:    a owl:ObjectProperty ;
+ontology/rico.ttl:8954::isRepresentationTypeOf
+ontology/rico.ttl:8955:    a owl:ObjectProperty ;
+ontology/rico.ttl:8982::isResponsibleForIssuing
+ontology/rico.ttl:8983:    a owl:ObjectProperty ;
+ontology/rico.ttl:9007::isSenderOf
+ontology/rico.ttl:9008:    a owl:ObjectProperty ;
+ontology/rico.ttl:9039::isToUseDateOf
+ontology/rico.ttl:9040:    a owl:ObjectProperty ;
+ontology/rico.ttl:9067::isUnitOfMeasurementOf
+ontology/rico.ttl:9068:    a owl:ObjectProperty ;
+ontology/rico.ttl:9097::isWithin
+ontology/rico.ttl:9098:    a owl:ObjectProperty ;
+ontology/rico.ttl:9130::issuedBy
+ontology/rico.ttl:9131:    a owl:ObjectProperty ;
+ontology/rico.ttl:9156::knownBy
+ontology/rico.ttl:9157:    a owl:ObjectProperty ;
+ontology/rico.ttl:9192::knowsOf
+ontology/rico.ttl:9193:    a owl:ObjectProperty ;
+ontology/rico.ttl:9229::migratedFrom
+ontology/rico.ttl:9230:    a owl:ObjectProperty ;
+ontology/rico.ttl:9277::migratedInto
+ontology/rico.ttl:9278:    a owl:ObjectProperty ;
+ontology/rico.ttl:9387::occupiesOrOccupied
+ontology/rico.ttl:9388:    a owl:ObjectProperty ;
+ontology/rico.ttl:9430::occurredAtDate
+ontology/rico.ttl:9431:    a owl:ObjectProperty ;
+ontology/rico.ttl:9464::performsOrPerformed
+ontology/rico.ttl:9465:    a owl:ObjectProperty ;
+ontology/rico.ttl:9560::positionIsContextOfLeadershipRelation
+ontology/rico.ttl:9561:    a owl:ObjectProperty ;
+ontology/rico.ttl:9584::positionIsContextOfMembershipRelation
+ontology/rico.ttl:9585:    a owl:ObjectProperty ;
+ontology/rico.ttl:9608::precededInSequence
+ontology/rico.ttl:9609:    a owl:ObjectProperty ;
+ontology/rico.ttl:9643::proxyFor
+ontology/rico.ttl:9644:    a owl:ObjectProperty ;
+ontology/rico.ttl:9666::proxyIn
+ontology/rico.ttl:9667:    a owl:ObjectProperty ;
+ontology/rico.ttl:9689::regulatesOrRegulated
+ontology/rico.ttl:9690:    a owl:ObjectProperty ;
+ontology/rico.ttl:9721::resultedFromTheMergerOf
+ontology/rico.ttl:9722:    a owl:ObjectProperty ;
+ontology/rico.ttl:9753::resultedFromTheSplitOf
+ontology/rico.ttl:9754:    a owl:ObjectProperty ;
+ontology/rico.ttl:9782::roleIsContextOfCreationRelation
+ontology/rico.ttl:9783:    a owl:ObjectProperty ;
+ontology/rico.ttl:9831::wasComponentOf
+ontology/rico.ttl:9832:    a owl:ObjectProperty ;
+ontology/rico.ttl:9864::wasConstituentOf
+ontology/rico.ttl:9865:    a owl:ObjectProperty ;
+ontology/rico.ttl:9915::wasContainedBy
+ontology/rico.ttl:9916:    a owl:ObjectProperty ;
+ontology/rico.ttl:9947::wasIncludedIn
+ontology/rico.ttl:9948:    a owl:ObjectProperty ;
+ontology/rico.ttl:9987::wasLastUpdatedAtDate
+ontology/rico.ttl:9988:    a owl:ObjectProperty ;
+ontology/rico.ttl:10011::wasMergedInto
+ontology/rico.ttl:10012:    a owl:ObjectProperty ;
+ontology/rico.ttl:10041::wasSplitInto
+ontology/rico.ttl:10042:    a owl:ObjectProperty ;
+ontology/rico.ttl:10072::wasSubdivisionOf
+ontology/rico.ttl:10073:    a owl:ObjectProperty ;
+ontology/rico.ttl:10105::wasSubeventOf
+ontology/rico.ttl:10106:    a owl:ObjectProperty ;
+ontology/rico.ttl:10138::wasUsedFromDate
+ontology/rico.ttl:10139:    a owl:ObjectProperty ;
+ontology/rico.ttl:10166::wasUsedToDate
+ontology/rico.ttl:10167:    a owl:ObjectProperty ;
+ontology/rico.ttl:10351::AccumulationRelation
+ontology/rico.ttl:10352:    a owl:Class ;
+ontology/rico.ttl:10419::ActivityDocumentationRelation
+ontology/rico.ttl:10420:    a owl:Class ;
+ontology/rico.ttl:10490::AgentName
+ontology/rico.ttl:10491:    a owl:Class ;
+ontology/rico.ttl:10513::AppellationRelation
+ontology/rico.ttl:10514:    a owl:Class ;
+ontology/rico.ttl:10570::AuthorshipRelation
+ontology/rico.ttl:10571:    a owl:Class ;
+ontology/rico.ttl:10647::CarrierType
+ontology/rico.ttl:10648:    a owl:Class ;
+ontology/rico.ttl:10688::ChildRelation
+ontology/rico.ttl:10689:    a owl:Class ;
+ontology/rico.ttl:10748::CorporateBodyType
+ontology/rico.ttl:10749:    a owl:Class ;
+ontology/rico.ttl:10774::CorrespondenceRelation
+ontology/rico.ttl:10775:    a owl:Class ;
+ontology/rico.ttl:10826::DateType
+ontology/rico.ttl:10827:    a owl:Class ;
+ontology/rico.ttl:10858::EventType
+ontology/rico.ttl:10859:    a owl:Class ;
+ontology/rico.ttl:10897::ExtentType
+ontology/rico.ttl:10898:    a owl:Class ;
+ontology/rico.ttl:10927::Family
+ontology/rico.ttl:10928:    a owl:Class ;
+ontology/rico.ttl:10965::FamilyType
+ontology/rico.ttl:10966:    a owl:Class ;
+ontology/rico.ttl:11002::FunctionalEquivalenceRelation
+ontology/rico.ttl:11003:    a owl:Class ;
+ontology/rico.ttl:11058::GroupSubdivisionRelation
+ontology/rico.ttl:11059:    a owl:Class ;
+ontology/rico.ttl:11119::IdentifierType
+ontology/rico.ttl:11120:    a owl:Class ;
+ontology/rico.ttl:11150::IntellectualPropertyRightsRelation
+ontology/rico.ttl:11151:    a owl:Class ;
+ontology/rico.ttl:11227::KnowingOfRelation
+ontology/rico.ttl:11228:    a owl:Class ;
+ontology/rico.ttl:11281::MandateType
+ontology/rico.ttl:11282:    a owl:Class ;
+ontology/rico.ttl:11303::Mechanism
+ontology/rico.ttl:11304:    a owl:Class ;
+ontology/rico.ttl:11345::MigrationRelation
+ontology/rico.ttl:11346:    a owl:Class ;
+ontology/rico.ttl:11407::OccupationType
+ontology/rico.ttl:11408:    a owl:Class ;
+ontology/rico.ttl:11456::OwnershipRelation
+ontology/rico.ttl:11457:    a owl:Class ;
+ontology/rico.ttl:11526::PerformanceRelation
+ontology/rico.ttl:11527:    a owl:Class ;
+ontology/rico.ttl:11585::PlaceName
+ontology/rico.ttl:11586:    a owl:Class ;
+ontology/rico.ttl:11608::PlaceRelation
+ontology/rico.ttl:11609:    a owl:Class ;
+ontology/rico.ttl:11662::PlaceType
+ontology/rico.ttl:11663:    a owl:Class ;
+ontology/rico.ttl:11691::PositionHoldingRelation
+ontology/rico.ttl:11692:    a owl:Class ;
+ontology/rico.ttl:11750::PositionToGroupRelation
+ontology/rico.ttl:11751:    a owl:Class ;
+ontology/rico.ttl:11810::ProductionTechniqueType
+ontology/rico.ttl:11811:    a owl:Class ;
+ontology/rico.ttl:11847::Proxy
+ontology/rico.ttl:11848:    a owl:Class ;
+ontology/rico.ttl:11886::RecordResourceGeneticRelation
+ontology/rico.ttl:11887:    a owl:Class ;
+ontology/rico.ttl:11940::RecordResourceHoldingRelation
+ontology/rico.ttl:11941:    a owl:Class ;
+ontology/rico.ttl:12012::RecordResourceToInstantiationRelation
+ontology/rico.ttl:12013:    a owl:Class ;
+ontology/rico.ttl:12075::RepresentationType
+ontology/rico.ttl:12076:    a owl:Class ;
+ontology/rico.ttl:12118::RoleType
+ontology/rico.ttl:12119:    a owl:Class ;
+ontology/rico.ttl:12141::SiblingRelation
+ontology/rico.ttl:12142:    a owl:Class ;
+ontology/rico.ttl:12188::SpouseRelation
+ontology/rico.ttl:12189:    a owl:Class ;
+ontology/rico.ttl:12235::TeachingRelation
+ontology/rico.ttl:12236:    a owl:Class ;
+ontology/rico.ttl:12295::Title
+ontology/rico.ttl:12296:    a owl:Class ;
+ontology/rico.ttl:12317::TypeRelation
+ontology/rico.ttl:12318:    a owl:Class ;
+ontology/rico.ttl:12371::UnitOfMeasurement
+ontology/rico.ttl:12372:    a owl:Class ;
+ontology/rico.ttl:12404::WorkRelation
+ontology/rico.ttl:12405:    a owl:Class ;
+ontology/rico.ttl:12456::asConcernsActivity
+ontology/rico.ttl:12457:    a owl:ObjectProperty ;
+ontology/rico.ttl:12617::hadSubordinate
+ontology/rico.ttl:12618:    a owl:ObjectProperty ;
+ontology/rico.ttl:12784::hasCreator
+ontology/rico.ttl:12785:    a owl:ObjectProperty ;
+ontology/rico.ttl:12892::hasDirectSubordinate
+ontology/rico.ttl:12893:    a owl:ObjectProperty ;
+ontology/rico.ttl:12923::hasModificationDate
+ontology/rico.ttl:12924:    a owl:ObjectProperty ;
+ontology/rico.ttl:12949::hasOrHadDemographicGroup
+ontology/rico.ttl:12950:    a owl:ObjectProperty ;
+ontology/rico.ttl:12986::hasOrHadDerivedInstantiation
+ontology/rico.ttl:12987:    a owl:ObjectProperty ;
+ontology/rico.ttl:13035::hasOrHadLocation
+ontology/rico.ttl:13036:    a owl:ObjectProperty ;
+ontology/rico.ttl:13066::hasOrHadManager
+ontology/rico.ttl:13067:    a owl:ObjectProperty ;
+ontology/rico.ttl:13115::hasOrHadRuleType
+ontology/rico.ttl:13116:    a owl:ObjectProperty ;
+ontology/rico.ttl:13150::hasOrHadSomeMembersWithCreationDate
+ontology/rico.ttl:13151:    a owl:ObjectProperty ;
+ontology/rico.ttl:13423::isCreatorOf
+ontology/rico.ttl:13424:    a owl:ObjectProperty ;
+ontology/rico.ttl:13470::isDirectSubordinateTo
+ontology/rico.ttl:13471:    a owl:ObjectProperty ;
+ontology/rico.ttl:13542::isModificationDateOf
+ontology/rico.ttl:13543:    a owl:ObjectProperty ;
+ontology/rico.ttl:13568::isOrWasCreationDateOfSomeMembersOf
+ontology/rico.ttl:13569:    a owl:ObjectProperty ;
+ontology/rico.ttl:13603::isOrWasDemographicGroupOf
+ontology/rico.ttl:13604:    a owl:ObjectProperty ;
+ontology/rico.ttl:13640::isOrWasDerivedFromInstantiation
+ontology/rico.ttl:13641:    a owl:ObjectProperty ;
+ontology/rico.ttl:13691::isOrWasLocationOf
+ontology/rico.ttl:13692:    a owl:ObjectProperty ;
+ontology/rico.ttl:13723::isOrWasManagerOf
+ontology/rico.ttl:13724:    a owl:ObjectProperty ;
+ontology/rico.ttl:13773::isOrWasRuleTypeOf
+ontology/rico.ttl:13774:    a owl:ObjectProperty ;
+ontology/rico.ttl:13881::leadershipWithPosition
+ontology/rico.ttl:13882:    a owl:ObjectProperty ;
+ontology/rico.ttl:13905::membershipWithPosition
+ontology/rico.ttl:13906:    a owl:ObjectProperty ;
+ontology/rico.ttl:14073::resultsOrResultedFrom
+ontology/rico.ttl:14074:    a owl:ObjectProperty ;
+ontology/rico.ttl:14105::resultsOrResultedIn
+ontology/rico.ttl:14106:    a owl:ObjectProperty ;
+ontology/rico.ttl:14258::wasSubordinateTo
+ontology/rico.ttl:14259:    a owl:ObjectProperty ;
+ontology/rico.ttl:14316::ActivityType
+ontology/rico.ttl:14317:    a owl:Class ;
+ontology/rico.ttl:14352::AgentControlRelation
+ontology/rico.ttl:14353:    a owl:Class ;
+ontology/rico.ttl:14414::DemographicGroup
+ontology/rico.ttl:14415:    a owl:Class ;
+ontology/rico.ttl:14454::DerivationRelation
+ontology/rico.ttl:14455:    a owl:Class ;
+ontology/rico.ttl:14519::DescendanceRelation
+ontology/rico.ttl:14520:    a owl:Class ;
+ontology/rico.ttl:14575::ManagementRelation
+ontology/rico.ttl:14576:    a owl:Class ;
+ontology/rico.ttl:14641::RecordResourceToRecordResourceRelation
+ontology/rico.ttl:14642:    a owl:Class ;
+ontology/rico.ttl:14696::RuleRelation
+ontology/rico.ttl:14697:    a owl:Class ;
+ontology/rico.ttl:14750::RuleType
+ontology/rico.ttl:14751:    a owl:Class ;
+ontology/rico.ttl:14788::SequentialRelation
+ontology/rico.ttl:14789:    a owl:Class ;
+ontology/rico.ttl:14852::WholePartRelation
+ontology/rico.ttl:14853:    a owl:Class ;
+ontology/rico.ttl:15084::containsOrContained
+ontology/rico.ttl:15085:    a owl:ObjectProperty ;
+ontology/rico.ttl:15180::hasAccumulator
+ontology/rico.ttl:15181:    a owl:ObjectProperty ;
+ontology/rico.ttl:15231::hasOrHadAppellation
+ontology/rico.ttl:15232:    a owl:ObjectProperty ;
+ontology/rico.ttl:15271::hasOrHadComponent
+ontology/rico.ttl:15272:    a owl:ObjectProperty ;
+ontology/rico.ttl:15305::hasOrHadConstituent
+ontology/rico.ttl:15306:    a owl:ObjectProperty ;
+ontology/rico.ttl:15362::hasOrHadController
+ontology/rico.ttl:15363:    a owl:ObjectProperty ;
+ontology/rico.ttl:15407::hasOrHadInstantiation
+ontology/rico.ttl:15408:    a owl:ObjectProperty ;
+ontology/rico.ttl:15463::hasOrHadParticipant
+ontology/rico.ttl:15464:    a owl:ObjectProperty ;
+ontology/rico.ttl:15495::hasOrHadSubdivision
+ontology/rico.ttl:15496:    a owl:ObjectProperty ;
+ontology/rico.ttl:15540::hasOrHadSubevent
+ontology/rico.ttl:15541:    a owl:ObjectProperty ;
+ontology/rico.ttl:15577::hasOrHadSubject
+ontology/rico.ttl:15578:    a owl:ObjectProperty ;
+ontology/rico.ttl:15616::hasOrganicOrFunctionalProvenance
+ontology/rico.ttl:15617:    a owl:ObjectProperty ;
+ontology/rico.ttl:15695::includesOrIncluded
+ontology/rico.ttl:15696:    a owl:ObjectProperty ;
+ontology/rico.ttl:15775::isAccumulatorOf
+ontology/rico.ttl:15776:    a owl:ObjectProperty ;
+ontology/rico.ttl:15824::isOrWasAppellationOf
+ontology/rico.ttl:15825:    a owl:ObjectProperty ;
+ontology/rico.ttl:15869::isOrWasComponentOf
+ontology/rico.ttl:15870:    a owl:ObjectProperty ;
+ontology/rico.ttl:15902::isOrWasConstituentOf
+ontology/rico.ttl:15903:    a owl:ObjectProperty ;
+ontology/rico.ttl:15954::isOrWasContainedBy
+ontology/rico.ttl:15955:    a owl:ObjectProperty ;
+ontology/rico.ttl:15988::isOrWasControllerOf
+ontology/rico.ttl:15989:    a owl:ObjectProperty ;
+ontology/rico.ttl:16038::isOrWasIncludedIn
+ontology/rico.ttl:16039:    a owl:ObjectProperty ;
+ontology/rico.ttl:16083::isOrWasInstantiationOf
+ontology/rico.ttl:16084:    a owl:ObjectProperty ;
+ontology/rico.ttl:16133::isOrWasParticipantIn
+ontology/rico.ttl:16134:    a owl:ObjectProperty ;
+ontology/rico.ttl:16165::isOrWasSubdivisionOf
+ontology/rico.ttl:16166:    a owl:ObjectProperty ;
+ontology/rico.ttl:16210::isOrWasSubeventOf
+ontology/rico.ttl:16211:    a owl:ObjectProperty ;
+ontology/rico.ttl:16244::isOrWasSubjectOf
+ontology/rico.ttl:16245:    a owl:ObjectProperty ;
+ontology/rico.ttl:16275::isOrganicOrFunctionalProvenanceOf
+ontology/rico.ttl:16276:    a owl:ObjectProperty ;
+ontology/rico.ttl:16902::AgentHierarchicalRelation
+ontology/rico.ttl:16903:    a owl:Class ;
+ontology/rico.ttl:16964::EventRelation
+ontology/rico.ttl:16965:    a owl:Class ;
+ontology/rico.ttl:17025::Identifier
+ontology/rico.ttl:17026:    a owl:Class ;
+ontology/rico.ttl:17062::InstantiationToInstantiationRelation
+ontology/rico.ttl:17063:    a owl:Class ;
+ontology/rico.ttl:17107::KnowingRelation
+ontology/rico.ttl:17108:    a owl:Class ;
+ontology/rico.ttl:17161::LeadershipRelation
+ontology/rico.ttl:17162:    a owl:Class ;
+ontology/rico.ttl:17227::MembershipRelation
+ontology/rico.ttl:17228:    a owl:Class ;
+ontology/rico.ttl:17293::OrganicOrFunctionalProvenanceRelation
+ontology/rico.ttl:17294:    a owl:Class ;
+ontology/rico.ttl:17369::OrganicProvenanceRelation
+ontology/rico.ttl:17370:    a owl:Class ;
+ontology/rico.ttl:17444::PhysicalLocation
+ontology/rico.ttl:17445:    a owl:Class ;
+ontology/rico.ttl:17482::TemporalRelation
+ontology/rico.ttl:17483:    a owl:Class ;
+ontology/rico.ttl:17721::followsOrFollowed
+ontology/rico.ttl:17722:    a owl:ObjectProperty ;
+ontology/rico.ttl:17763::hasEndDate
+ontology/rico.ttl:17764:    a owl:ObjectProperty ;
+ontology/rico.ttl:17839::hasOrHadName
+ontology/rico.ttl:17840:    a owl:ObjectProperty ;
+ontology/rico.ttl:17869::hasSuccessor
+ontology/rico.ttl:17870:    a owl:ObjectProperty ;
+ontology/rico.ttl:17948::isEndDateOf
+ontology/rico.ttl:17949:    a owl:ObjectProperty ;
+ontology/rico.ttl:17974::isOrWasNameOf
+ontology/rico.ttl:17975:    a owl:ObjectProperty ;
+ontology/rico.ttl:18004::isSuccessorOf
+ontology/rico.ttl:18005:    a owl:ObjectProperty ;
+ontology/rico.ttl:18105::precedesOrPreceded
+ontology/rico.ttl:18106:    a owl:ObjectProperty ;
+ontology/rico.ttl:18299::AgentTemporalRelation
+ontology/rico.ttl:18300:    a owl:Class ;
+ontology/rico.ttl:18368::Concept
+ontology/rico.ttl:18369:    a owl:Class ;
+ontology/rico.ttl:18389::CreationRelation
+ontology/rico.ttl:18390:    a owl:Class ;
+ontology/rico.ttl:18466::FamilyRelation
+ontology/rico.ttl:18467:    a owl:Class ;
+ontology/rico.ttl:18521::Mandate
+ontology/rico.ttl:18522:    a owl:Class ;
+ontology/rico.ttl:18571::Name
+ontology/rico.ttl:18572:    a owl:Class ;
+ontology/rico.ttl:18687::hasOrHadAllMembersWithCategory
+ontology/rico.ttl:18688:    a owl:ObjectProperty ;
+ontology/rico.ttl:18719::hasOrHadAuthorityOver
+ontology/rico.ttl:18720:    a owl:ObjectProperty ;
+ontology/rico.ttl:18769::hasOrHadSomeMembersWithCategory
+ontology/rico.ttl:18770:    a owl:ObjectProperty ;
+ontology/rico.ttl:18800::hasOrHadSubordinate
+ontology/rico.ttl:18801:    a owl:ObjectProperty ;
+ontology/rico.ttl:18850::hasOrganicProvenance
+ontology/rico.ttl:18851:    a owl:ObjectProperty ;
+ontology/rico.ttl:18908::isAgentAssociatedWithPlace
+ontology/rico.ttl:18909:    a owl:ObjectProperty ;
+ontology/rico.ttl:18982::isOrWasCategoryOfAllMembersOf
+ontology/rico.ttl:18983:    a owl:ObjectProperty ;
+ontology/rico.ttl:19013::isOrWasCategoryOfSomeMembersOf
+ontology/rico.ttl:19014:    a owl:ObjectProperty ;
+ontology/rico.ttl:19044::isOrWasSubordinateTo
+ontology/rico.ttl:19045:    a owl:ObjectProperty ;
+ontology/rico.ttl:19087::isOrWasUnderAuthorityOf
+ontology/rico.ttl:19088:    a owl:ObjectProperty ;
+ontology/rico.ttl:19130::isOrganicProvenanceOf
+ontology/rico.ttl:19131:    a owl:ObjectProperty ;
+ontology/rico.ttl:19184::isPlaceAssociatedWithAgent
+ontology/rico.ttl:19185:    a owl:ObjectProperty ;
+ontology/rico.ttl:19308::AuthorityRelation
+ontology/rico.ttl:19309:    a owl:Class ;
+ontology/rico.ttl:19369::ContentType
+ontology/rico.ttl:19370:    a owl:Class ;
+ontology/rico.ttl:19413::Language
+ontology/rico.ttl:19414:    a owl:Class ;
+ontology/rico.ttl:19450::LegalStatus
+ontology/rico.ttl:19451:    a owl:Class ;
+ontology/rico.ttl:19472::MandateRelation
+ontology/rico.ttl:19473:    a owl:Class ;
+ontology/rico.ttl:19542::RecordSetType
+ontology/rico.ttl:19543:    a owl:Class ;
+ontology/rico.ttl:19582::RecordState
+ontology/rico.ttl:19583:    a owl:Class ;
+ontology/rico.ttl:19623::hasBeginningDate
+ontology/rico.ttl:19624:    a owl:ObjectProperty ;
+ontology/rico.ttl:19701::isAssociatedWithEvent
+ontology/rico.ttl:19702:    a owl:ObjectProperty ;
+ontology/rico.ttl:19738::isAssociatedWithRule
+ontology/rico.ttl:19739:    a owl:ObjectProperty ;
+ontology/rico.ttl:19775::isEventAssociatedWith
+ontology/rico.ttl:19776:    a owl:ObjectProperty ;
+ontology/rico.ttl:19819::isRuleAssociatedWith
+ontology/rico.ttl:19820:    a owl:ObjectProperty ;
+ontology/rico.ttl:19885::relationHasContext
+ontology/rico.ttl:19886:    a owl:ObjectProperty ;
+ontology/rico.ttl:19911::thingIsContextOfRelation
+ontology/rico.ttl:19912:    a owl:ObjectProperty ;
+ontology/rico.ttl:19935::Coordinates
+ontology/rico.ttl:19936:    a owl:Class ;
+ontology/rico.ttl:20048::hadPart
+ontology/rico.ttl:20049:    a owl:ObjectProperty ;
+ontology/rico.ttl:20078::hasDirectPart
+ontology/rico.ttl:20079:    a owl:ObjectProperty ;
+ontology/rico.ttl:20111::isBeginningDateOf
+ontology/rico.ttl:20112:    a owl:ObjectProperty ;
+ontology/rico.ttl:20137::isDirectPartOf
+ontology/rico.ttl:20138:    a owl:ObjectProperty ;
+ontology/rico.ttl:20271::wasPartOf
+ontology/rico.ttl:20272:    a owl:ObjectProperty ;
+ontology/rico.ttl:20301::DocumentaryFormType
+ontology/rico.ttl:20302:    a owl:Class ;
+ontology/rico.ttl:20379::isAssociatedWithPlace
+ontology/rico.ttl:20380:    a owl:ObjectProperty ;
+ontology/rico.ttl:20416::isDateAssociatedWith
+ontology/rico.ttl:20417:    a owl:ObjectProperty ;
+ontology/rico.ttl:20485::isPlaceAssociatedWith
+ontology/rico.ttl:20486:    a owl:ObjectProperty ;
+ontology/rico.ttl:20585::isAssociatedWithDate
+ontology/rico.ttl:20586:    a owl:ObjectProperty ;
+ontology/rico.ttl:20611::hasOrHadPart
+ontology/rico.ttl:20612:    a owl:ObjectProperty ;
+ontology/rico.ttl:20663::isOrWasPartOf
+ontology/rico.ttl:20664:    a owl:ObjectProperty ;
+ontology/rico.ttl:20705::AgentToAgentRelation
+ontology/rico.ttl:20706:    a owl:Class ;
+ontology/rico.ttl:20787::CorporateBody
+ontology/rico.ttl:20788:    a owl:Class ;
+ontology/rico.ttl:20832::Extent
+ontology/rico.ttl:20833:    a owl:Class ;
+ontology/rico.ttl:20859::Appellation
+ontology/rico.ttl:20860:    a owl:Class ;
+ontology/rico.ttl:20880::Activity
+ontology/rico.ttl:20881:    a owl:Class ;
+ontology/rico.ttl:21000::thingIsConnectedToRelation
+ontology/rico.ttl:21001:    a owl:ObjectProperty ;
+ontology/rico.ttl:21027::Rule
+ontology/rico.ttl:21028:    a owl:Class ;
+ontology/rico.ttl:21086::hasOrHadCategory
+ontology/rico.ttl:21087:    a owl:ObjectProperty ;
+ontology/rico.ttl:21126::isOrWasCategoryOf
+ontology/rico.ttl:21127:    a owl:ObjectProperty ;
+ontology/rico.ttl:21166::Position
+ontology/rico.ttl:21167:    a owl:Class ;
+ontology/rico.ttl:21205::Type
+ontology/rico.ttl:21206:    a owl:Class ;
+ontology/rico.ttl:21226::Relation
+ontology/rico.ttl:21227:    a owl:Class ;
+ontology/rico.ttl:21283::relationConnects
+ontology/rico.ttl:21284:    a owl:ObjectProperty ;
+ontology/rico.ttl:21307::Event
+ontology/rico.ttl:21308:    a owl:Class ;
+ontology/rico.ttl:21350::RecordPart
+ontology/rico.ttl:21351:    a owl:Class ;
+ontology/rico.ttl:21389::thingIsSourceOfRelation
+ontology/rico.ttl:21390:    a owl:ObjectProperty ;
+ontology/rico.ttl:21413::thingIsTargetOfRelation
+ontology/rico.ttl:21414:    a owl:ObjectProperty ;
+ontology/rico.ttl:21437::Group
+ontology/rico.ttl:21438:    a owl:Class ;
+ontology/rico.ttl:21474::Place
+ontology/rico.ttl:21475:    a owl:Class ;
+ontology/rico.ttl:21516::Date
+ontology/rico.ttl:21517:    a owl:Class ;
+ontology/rico.ttl:21551::Record
+ontology/rico.ttl:21552:    a owl:Class ;
+ontology/rico.ttl:21637::RecordSet
+ontology/rico.ttl:21638:    a owl:Class ;
+ontology/rico.ttl:21698::relationHasSource
+ontology/rico.ttl:21699:    a owl:ObjectProperty ;
+ontology/rico.ttl:21722::relationHasTarget
+ontology/rico.ttl:21723:    a owl:ObjectProperty ;
+ontology/rico.ttl:21746::Person
+ontology/rico.ttl:21747:    a owl:Class ;
+ontology/rico.ttl:21809::RecordResource
+ontology/rico.ttl:21810:    a owl:Class ;
+ontology/rico.ttl:21879::Instantiation
+ontology/rico.ttl:21880:    a owl:Class ;
+ontology/rico.ttl:21952::Agent
+ontology/rico.ttl:21953:    a owl:Class ;
+ontology/rico.ttl:21997::Thing
+ontology/rico.ttl:21998:    a owl:Class ;

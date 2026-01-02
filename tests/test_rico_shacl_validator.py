@@ -168,7 +168,7 @@ class TestActivityShape:
 """
         with open(TEST_DATA_DIR / "invalid_activity_wrong_type.ttl", "w") as f:
             f.write(test_data)
-        
+
         conforms, results = validate_data(
             TEST_DATA_DIR / "invalid_activity_wrong_type.ttl",
             expected_conform=False,
@@ -201,7 +201,7 @@ class TestPersonShape:
 """
         with open(TEST_DATA_DIR / "invalid_person_wrong_type.ttl", "w") as f:
             f.write(test_data)
-        
+
         conforms, results = validate_data(
             TEST_DATA_DIR / "invalid_person_wrong_type.ttl",
             expected_conform=False,
